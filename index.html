@@ -1,8 +1,183 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateusz Kukula</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #ffffff;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 60px auto;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #1a1a1a;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #444;
+        }
+
+        .projects {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .project {
+            padding: 1.5rem;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            transition: box-shadow 0.2s ease;
+        }
+
+        .project:hover {
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .project h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #1a1a1a;
+        }
+
+        .project a {
+            color: #0066cc;
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+
+        .contact {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .contact-item a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 30px auto;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
 <body>
-<h1>Hey!</h1>
-<p>I'm Mateusz Kukula 😊</p>
-<p>Feel free to reach me out here: kukula.mateusz@gmail.com</p>
+    <div class="container">
+        <header>
+            <h1>Hey! I'm Mateusz Kukula 😊</h1>
+            <p class="subtitle">Full-stack Developer</p>
+        </header>
+
+        <section>
+            <h2>About</h2>
+            <p>I'm a full-stack developer with commercial experience in mobile technologies, specializing in Flutter development. I build end-to-end solutions with focus on clean code and user experience.</p>
+            <p>Currently expanding my expertise in AI/ML technologies.</p>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Teame App</h3>
+                    <a href="https://teameapp.co/" target="_blank" rel="noopener noreferrer">teameapp.co</a>
+                </div>
+                <div class="project">
+                    <h3>Cold Mail Them</h3>
+                    <a href="https://coldmailthem.com/" target="_blank" rel="noopener noreferrer">coldmailthem.com</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <div class="contact">
+                <div class="contact-item">
+                    <span>Email:</span>
+                    <a href="mailto:kukula.mateusz@gmail.com">kukula.mateusz@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <span>LinkedIn:</span>
+                    <a href="https://www.linkedin.com/in/kukula-mateusz/" target="_blank" rel="noopener noreferrer">linkedin.com/in/kukula-mateusz</a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2025 Mateusz Kukula</p>
+        </footer>
+    </div>
 </body>
 </html>
